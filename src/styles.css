@@ -1,1 +1,5 @@
-
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/197/original/BOOK-BACKGROUND-animation.gif?1708536946");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
