@@ -29,11 +29,11 @@ a:hover {
   padding: 10px;
   width: 300px;
   border-radius: 10px;
-  border: 2px solid;
+  border: 2px solid #8292ff;
   background-color: #fffaf5;
-  border-color: #8292ff;
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: light;
 }
 
 input::placeholder {
@@ -43,14 +43,14 @@ input::placeholder {
 }
 
 .submit {
-  font-weight: 700;
   background-color: #8292ff;
   color: #1e2974;
   padding: 10px 15px;
+  margin-left: 10px;
   border-radius: 10px;
   border: 2px solid #8292ff;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .form-elements {
@@ -84,5 +84,32 @@ input::placeholder {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.6;
-  color: #243aa3;
+  color: #5a6acf;
+}
+
+.book-teaser {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.generating-recommendations {
+  animation: blink-animation 1s steps(5, start) infinite;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
