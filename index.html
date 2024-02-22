@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Book Recommendation Generator</title>
 </head>
 
@@ -19,20 +20,16 @@
             <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/246/original/NEW-BOOK-BACKGROUND_1.gif?1708552587"
                 alt="illustration" />
         </div>
-        <form>
+        <form id="book-genre-form">
             <div class="form-elements">
                 <input class=input-bar type="text" placeholder="Enter the genre you'd like to read" required />
-
                 <input class="submit" type="submit" value="SUBMIT" />
             </div>
             <div class="input-examples">
                 <small>i.e: Science fiction, road trip, historical</small>
             </div>
         </form>
-        <div class="results-container">
-            <strong>On the Road</strong>, by Jack Kerouac <br />
-            <strong>Blue Highways</strong>, by William Least Heat-Moon<br />
-            <strong>Travels with Charley in Search of America</strong>, by John Steinbeck
+        <div class="results-container" id="book-results">
         </div>
 
         <footer>
