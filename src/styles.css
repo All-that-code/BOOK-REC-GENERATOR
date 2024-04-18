@@ -22,7 +22,7 @@ a:hover {
 .illustrated-books {
   display: block;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 45px;
   justify-content: center;
   max-width: 500px;
 }
@@ -164,6 +164,6 @@ input::placeholder {
     max-width: 70%;
   }
   .input-bar {
-    width: 120px;
+    width: 200px;
   }
 }
