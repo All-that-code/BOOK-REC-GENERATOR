@@ -30,6 +30,7 @@ a:hover {
 .input-bar {
   padding: 10px;
   width: 300px;
+  height: 40px;
   border-radius: 10px;
   border: 2px solid #8292ff;
   background-color: #fffaf5;
@@ -47,7 +48,7 @@ input::placeholder {
 .submit {
   background-color: #8292ff;
   color: #1e2974;
-  padding: 10px 15px;
+  padding: 5px 15px;
   margin-left: 10px;
   border-radius: 10px;
   border: 2px solid #8292ff;
@@ -55,12 +56,19 @@ input::placeholder {
   font-weight: 600;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
 .form-elements {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin: 10px auto;
 }
 .input-examples {
   text-align: center;
@@ -68,8 +76,6 @@ input::placeholder {
   color: #5a6acf;
   font-size: 12px;
   margin-bottom: 20px;
-  margin-left: -230px;
-  margin-top: 5px;
 }
 
 .results-container {
@@ -115,8 +121,16 @@ input::placeholder {
 }
 
 @media (max-width: 900px) {
-  .results-container img {
-    width: 40%;
+  .form-elements {
+    max-width: 70%;
+  }
+  .input-examples {
+    text-align: center;
+  }
+  input::placeholder {
+    font-size: 12px;
+    opacity: 1;
+    color: #858585;
   }
   .results-container {
     display: grid;
@@ -125,10 +139,25 @@ input::placeholder {
   }
 
   .book-teaser {
-    width: 390px;
-    height: 121px;
+    max-width: 390px;
+    max-height: 121px;
     margin: 10px auto;
     padding: 40px;
+    font-size: 16px;
+  }
+
+  footer {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .book-teaser {
+    max-width: 312px;
+    max-height: 97px;
+    margin: 10px auto;
+    padding: 30px;
     font-size: 16px;
   }
 }
