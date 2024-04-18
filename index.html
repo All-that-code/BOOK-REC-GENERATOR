@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,18 +12,25 @@
         rel="stylesheet">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Book Recommendation Generator</title>
 </head>
 
 <body>
-    <div class="app-container">
-        <div class="illustrated-books">
-            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/246/original/NEW-BOOK-BACKGROUND_1.gif?1708552587"
-                alt="illustration" />
+    <div class="row">
+        <div class="col-sm justify-content-center">
+            <div class="illustrated-books">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/246/original/NEW-BOOK-BACKGROUND_1.gif?1708552587"
+                    alt="book animation" class="img-fluid" />
+            </div>
         </div>
-        <form id="book-genre-form">
+    </div>
+    <div class="row">
+        <form id="book-genre-form  col-sm justify-content-center">
             <div class="form-elements">
-                <input class=input-bar id=user-input type="text" placeholder="Enter your preferred genre or theme"
+                <input class="input-bar" id="user-input" type="text" placeholder="Enter your preferred theme"
                     required />
                 <input class="submit" type="submit" value="SUBMIT" />
             </div>
@@ -31,15 +38,19 @@
                 <small>i.e: Science fiction, road trip, historical</small>
             </div>
         </form>
+    </div>
+    <div class="row mb-1">
         <div class="results-container" id="book-results">
-            <div class="book-teaser"> WHICH BOOKS WILL YOU DISCOVER TODAY?</div>
+            <div class="book-teaser text-center"> WHICH BOOKS WILL YOU DISCOVER TODAY?</div>
         </div>
 
-        <footer>
-            <p>Coded and designed by <a href="https://github.com/All-that-code" target=_blank>Amaia Arbizu</a> and open
-                sourced on <a href="https://github.com/All-that-code/BOOK-REC-GENERATOR" target=_blank>GitHub</a></p>
-        </footer>
     </div>
+
+    <footer>
+        <p>Coded and designed by <a href="https://github.com/All-that-code" target=_blank>Amaia Arbizu</a> and open
+            sourced on <a href="https://github.com/All-that-code/BOOK-REC-GENERATOR" target=_blank>GitHub</a></p>
+    </footer>
+
     <script src="src/index.js"></script>
 </body>
 
